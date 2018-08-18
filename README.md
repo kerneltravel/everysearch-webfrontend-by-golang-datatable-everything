@@ -12,6 +12,10 @@ open with browser the search page.
 ```
 user-frontend\index.html 
 ```
+or just click the single-run front application:
+```
+user-frontend\page-load-by-go-webview-demo.exe
+```
 
 WHAT'S MORE:
 ================================================================================
