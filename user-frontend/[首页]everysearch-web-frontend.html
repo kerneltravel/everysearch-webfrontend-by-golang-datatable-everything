@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>电脑本地文件极速搜索——基于Everything API</title>
+    <script type="text/javascript" src="https://unpkg.com/jquery@3.3.1/dist/jquery.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="everysearch.js"></script>
+    <script type="text/javascript"> 
+        (function () {
+            var oLanguage = {
+                "oAria": {
+                    "sSortAscending": ": 升序排列",
+                    "sSortDescending": ": 降序排列"
+                },
+                "oPaginate": {
+                    "sFirst": "首页",
+                    "sLast": "末页",
+                    "sNext": "下页",
+                    "sPrevious": "上页"
+                },
+                "sEmptyTable": "没有相关记录",
+                "sInfo": "第 _START_ 到 _END_ 条记录，共 _TOTAL_ 条",
+                "sInfoEmpty": "第 0 到 0 条记录，共 0 条",
+                "sInfoFiltered": "(从 _MAX_ 条记录中检索)",
+                "sInfoPostFix": "",
+                "sDecimal": "",
+                "sThousands": ",",
+                "sLengthMenu": "每页显示条数: _MENU_",
+                "sLoadingRecords": "正在载入...",
+                "sProcessing": "正在载入...",
+                "sSearch": "搜索:",
+                "sSearchPlaceholder": "",
+                "sUrl": "",
+                "sZeroRecords": "没有相关记录"
+            }
+            $.fn.dataTable.defaults.oLanguage = oLanguage;
+            //$.extend($.fn.dataTable.defaults.oLanguage,oLanguage)
+        })();
+        $(document).ready(
+            function () {
+                callmefirst();
+            }
+        );
+
+    </script>
+    <link rel="stylesheet" href="http://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+</head>
+
+<body>
+    <form>
+        <p>
+            <label for="keyword">文件名关键词：</label>
+            <input autofocus id="keyword" name="keyword" placeholder="如多个关键词，可空格分隔" />
+            <button type="button" id="searchbutton" formmethod="get">点我查找</button>
+        </p>
+    </form>
+    <table id="searchresult" class="display" cellspacing="0" width="100%">
+        <thead>
+            <tr>
+                <td id="name">文件名</td>
+                <td id="path">路径</td>
+                <td id="size">大小</td>
+                <td id="fdate">修改时间</td>
+            </tr>
+        </thead>
+    </table>
+</body>
+
+</html>
