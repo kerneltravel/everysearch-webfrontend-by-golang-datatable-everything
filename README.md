@@ -1,6 +1,11 @@
 # everysearch-webfrontend-by-golang-datatable-everything
 Everything SDK is an powerful file search engiine.And this project -everysearch-web ,provides single-html-page as frontend for search ,with a customgolang daemon application providing search backend based on Everythin-SDK.
 
+Install:
+================================================================================
+[get zipped file from release page](https://github.com/kerneltravel/everysearch-webfrontend-by-golang-datatable-everything/releases/)
+and unzip .
+
 Usage:
 ================================================================================
 start backend by click&run deamon service file:
