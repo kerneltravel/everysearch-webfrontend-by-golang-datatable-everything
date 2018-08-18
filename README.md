@@ -33,7 +33,7 @@ and
 github.com/jof4002/Everything
 ```
 
-2.More info on Everythin-runtime files:
+2.More info on Everything-runtime files:
 put Everything32.dll OR Everything64.dll  file under the same directory of your exe file.
 
 
