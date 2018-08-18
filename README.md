@@ -11,3 +11,8 @@ open with browser the search page.
 ```
 user-frontend\[首页]everysearch-web-frontend.html 
 ```
+
+More info on compile the backend application:
+put Everything32.dll OR Everything64.dll  file under the same directory of your exe file.
+
+install golang ENV,and build with build-编译后端服务.bat 
