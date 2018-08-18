@@ -9,7 +9,7 @@ daemon-backend\everysearch-golang-backend.exe
 
 open with browser the search page.
 ```
-user-frontend\[首页]everysearch-web-frontend.html 
+user-frontend\index.html 
 ```
 
 More info on compile the backend application:
