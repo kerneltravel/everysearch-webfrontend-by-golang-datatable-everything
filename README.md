@@ -22,10 +22,11 @@ or just click the single-run front application:
 user-frontend\page-load-by-go-webview-demo.exe
 ```
 
-WHAT'S MORE:
+Development:
 ================================================================================
-1.More on compiling:need golang ENV,and build with build-backend.bat 
-relays on these 3 projects:
+1.on compiling:
+need golang ENV,and build with build-backend.bat .
+the backend relays on these 3 projects:
 ```
 github.com/zserge/webview
 ```
